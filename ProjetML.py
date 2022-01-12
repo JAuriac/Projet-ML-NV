@@ -38,12 +38,23 @@ pca.fit(X_scaled)
 X_final = X_scaled
 
 #
-param_grid_RForest = {'criterion': ['entropy'],
+param_grid_RForestV1 = {'criterion': ['entropy'],
                      'max_depth': [20],
                      'max_features': ['sqrt'],
                      'min_weight_fraction_leaf': [0.0],
                      'n_estimators': [170],
                      'n_jobs': [-1]}
+
+param_grid_RForest = {'n_estimators': np.arange(200,501,40),
+                      'criterion':['gini', 'entropy'],
+                      'max_depth':[4,5,6,10,20,50,100,150,200],
+                      'min_samples_split': np.arange(1,6,1),
+                      'min_samples_leaf': np.arange(1,6,1),
+                      'min_weight_fraction_leaf': np.arange(0,0.6,0.1),
+                      'max_features':['sqrt','log2'],
+                      #'bootstrap':[True, False],
+                      #'oob_score':[True, False],
+                      'n_jobs': [-1]}
 
 grid_RForest = GridSearchCV(RandomForestClassifier(), param_grid_RForest, cv=10)
 
