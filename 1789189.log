@@ -1,0 +1,47 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.00833018 0.00717335 0.00599576 0.00561131]
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in __call__
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 520, in _fit_and_score
+    estimator = estimator.set_params(**cloned_parameters)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/base.py", line 249, in set_params
+    raise ValueError('Invalid parameter %s for estimator %s. '
+ValueError: Invalid parameter covariance_type for estimator MLPClassifier(). Check the list of available parameters with `estimator.get_params().keys()`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ProjetMLMLP.py", line 60, in <module>
+    grid_MLP.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 736, in fit
+    self._run_search(evaluate_candidates)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 1188, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 708, in evaluate_candidates
+    out = parallel(delayed(_fit_and_score)(clone(base_estimator),
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 1042, in __call__
+    self.retrieve()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 921, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+ValueError: Invalid parameter covariance_type for estimator MLPClassifier(). Check the list of available parameters with `estimator.get_params().keys()`.
+End computation

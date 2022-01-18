@@ -1,0 +1,5 @@
+  File "ProjetMLMLP.py", line 44
+    param_grid_MLP = {'hidden_layer_sizes': [(5, 2),(1, 1),(15,],
+                                                               ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+End computation

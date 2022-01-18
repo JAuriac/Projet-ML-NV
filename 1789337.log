@@ -1,0 +1,33 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9301744059689762
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9308145264622455
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9168644501757383
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9173162591767806
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9202530557842781
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9414511973338143
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9414512150550806
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.9311345175959416
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.8145073693531539
+{'algorithm': 'ball_tree', 'leaf_size': 1, 'n_jobs': -1, 'n_neighbors': 4, 'p': 2, 'weights': 'distance'}
+0.8359502486789859
+0.8145073693531539
+End computation

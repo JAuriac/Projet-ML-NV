@@ -1,0 +1,14 @@
+là
+{'criterion': 'entropy', 'max_depth': 50, 'max_features': 'sqrt', 'min_weight_fraction_leaf': 0.0, 'n_estimators': 400, 'n_jobs': -1}
+RandomForestClassifier(criterion='entropy', max_depth=50, max_features='sqrt',
+                       n_estimators=400, n_jobs=-1)
+0.9179751411746959
+Traceback (most recent call last):
+  File "ProjetML.py", line 88, in <module>
+    zip_obj.write("protein_test400.predict")
+  File "/softs/python/3.8.5/lib/python3.8/zipfile.py", line 1741, in write
+    zinfo = ZipInfo.from_file(filename, arcname,
+  File "/softs/python/3.8.5/lib/python3.8/zipfile.py", line 523, in from_file
+    st = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'protein_test400.predict'
+End computation

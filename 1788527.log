@@ -1,0 +1,8 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.00833017 0.00717328 0.00599536 0.00560997]
+{'criterion': 'entropy', 'max_depth': 50, 'max_features': 'sqrt', 'n_estimators': 400, 'n_jobs': -1}
+RandomForestClassifier(criterion='entropy', max_depth=50, max_features='sqrt',
+                       n_estimators=400, n_jobs=-1)
+0.9145299568791971
+0.9178433782432753
+End computation

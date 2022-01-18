@@ -1,0 +1,7 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+Traceback (most recent call last):
+  File "ProjetMLPreprocessing.py", line 169, in <module>
+    grid_knn = GridSearchCV(AdaBoostClassifier(), param_grid_knn, cv=10)
+NameError: name 'param_grid_knn' is not defined
+End computation

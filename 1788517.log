@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "ProjetMLDoublon.py", line 30, in <module>
+    X_scaled = scaler.transform(X)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py", line 788, in transform
+    check_is_fitted(self)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 1020, in check_is_fitted
+    raise NotFittedError(msg % {'name': type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+End computation

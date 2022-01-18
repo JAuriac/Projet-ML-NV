@@ -1,0 +1,13 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+Traceback (most recent call last):
+  File "ProjetMLPreprocessing.py", line 62, in <module>
+    X_powerBC = scaler.fit_transform(X)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py", line 2808, in fit_transform
+    return self._fit(X, y, force_transform=True)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py", line 2811, in _fit
+    X = self._check_input(X, in_fit=True, check_positive=True,
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py", line 3032, in _check_input
+    raise ValueError("The Box-Cox transformation can only be "
+ValueError: The Box-Cox transformation can only be applied to strictly positive data
+End computation

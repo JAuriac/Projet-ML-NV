@@ -1,0 +1,33 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.00833018 0.00717329 0.00599517 0.00561032]
+Traceback (most recent call last):
+  File "ProjetMLSVM.py", line 57, in <module>
+    grid_SVC.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 736, in fit
+    self._run_search(evaluate_candidates)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 1188, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 708, in evaluate_candidates
+    out = parallel(delayed(_fit_and_score)(clone(base_estimator),
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 1029, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 847, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 765, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in __call__
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 520, in _fit_and_score
+    estimator = estimator.set_params(**cloned_parameters)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/base.py", line 249, in set_params
+    raise ValueError('Invalid parameter %s for estimator %s. '
+ValueError: Invalid parameter n_jobs for estimator SVC(C=0.1, degree=1, kernel='linear'). Check the list of available parameters with `estimator.get_params().keys()`.
+End computation
