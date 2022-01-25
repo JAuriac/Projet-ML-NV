@@ -1,0 +1,154 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.0083302  0.00717338 0.00599617 0.00561228
+ 0.00492868 0.00460755 0.00431952 0.00410089 0.00384346 0.00372489
+ 0.00368985 0.00364708 0.00356519 0.00351513 0.00345304 0.00340103
+ 0.00338663 0.00332894 0.00329952 0.00326509 0.00323721 0.00321661
+ 0.00319362 0.00316684 0.00315225 0.00313225 0.00312875 0.00308407
+ 0.00306448 0.0030499  0.00303799 0.00300464 0.00299592 0.00295856
+ 0.0029498  0.0029172  0.00290879 0.00289179 0.00286643 0.00285305
+ 0.00283033 0.00281059 0.0027819  0.00276656 0.00275686 0.00271242
+ 0.00267931 0.00265555 0.00260987 0.00256247 0.00237276 0.00194047
+ 0.00183103 0.0018028  0.00171857 0.0016842  0.0016626  0.00163467
+ 0.00160281 0.00157745 0.00157052 0.00156377 0.00151922 0.00150605
+ 0.00149567 0.00147703 0.00146286 0.00143421 0.00141597 0.00141328
+ 0.00140094 0.00139508 0.00138002 0.00136984 0.00136232 0.00134934
+ 0.00133722 0.00132395 0.00131938 0.00131444 0.00130807 0.00130392
+ 0.00129471 0.00128394 0.00127599 0.00127242 0.00126524 0.00125494
+ 0.00125038 0.00123818 0.00123537 0.00122862]
+{'gamma': 'auto', 'kernel': 'rbf'}
+0.8441771658081068
+0.9380437380700435
+Traceback (most recent call last):
+  File "ProjetMLSVM.py", line 108, in <module>
+    grid_SVC.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 765, in fit
+    self.best_estimator_.fit(X, y, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 217, in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 268, in _dense_fit
+    self._probB, self.fit_status_ = libsvm.fit(
+  File "sklearn/svm/_libsvm.pyx", line 191, in sklearn.svm._libsvm.fit
+ValueError: specified nu is infeasible
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+End computation

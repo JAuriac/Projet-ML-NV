@@ -1,0 +1,193 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.0083302  0.00717338 0.00599618 0.00561228
+ 0.00492867 0.00460757 0.00431955 0.00410098 0.00384332 0.00372459
+ 0.00368999 0.00364691 0.00356545 0.00351553 0.00345347 0.00340132
+ 0.00338681 0.0033286  0.00329881 0.00326513 0.00323607 0.00321719
+ 0.00319406 0.00316618 0.00315269 0.00313193 0.0031292  0.00308501
+ 0.00306254 0.00304957 0.00303679 0.00300493 0.00299536 0.00295817
+ 0.00295143 0.00291497 0.00290666 0.00289187 0.00286461 0.00285011
+ 0.00282868 0.00281265 0.0027818  0.0027671  0.00275379 0.00271488
+ 0.00268014 0.00265658 0.00261049 0.00256448 0.00237346 0.00193911
+ 0.00183803 0.00178171 0.00171849 0.00168929 0.00165071 0.00161864
+ 0.00161039 0.00157349 0.00155733 0.00153891 0.00152035 0.00150126
+ 0.00149087 0.00148051 0.00146059 0.00144858 0.00141832 0.00140418
+ 0.00139224 0.00138442 0.00137775 0.00135897 0.0013519  0.00134687
+ 0.00133604 0.00132151 0.00131152 0.00130758 0.00130049 0.00129481
+ 0.00128257 0.00127633 0.00126244 0.00125627 0.00125272 0.00124588
+ 0.00124167 0.00123579 0.00123182 0.00121906]
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:548: FitFailedWarning: Estimator fit failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 531, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 233, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 965, in _fit_liblinear
+    solver_type = _get_liblinear_solver_type(multi_class, penalty, loss, dual)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py", line 821, in _get_liblinear_solver_type
+    raise ValueError('Unsupported set of arguments: %s, '
+ValueError: Unsupported set of arguments: The combination of penalty='l1' and loss='squared_hinge' are not supported when dual=True, Parameters: penalty='l1', loss='squared_hinge', dual=True
+
+  warnings.warn("Estimator fit failed. The score on this train-test"
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn("Liblinear failed to converge, increase "
+{'max_iter': 10000, 'penalty': 'l2'}
+0.7548295837969217
+0.8101209341744271
+End computation

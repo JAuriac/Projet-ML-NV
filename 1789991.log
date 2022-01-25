@@ -1,0 +1,62 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.0083302  0.00717338 0.00599618 0.00561229
+ 0.00492866 0.00460749 0.00431951 0.00410106 0.00384352 0.00372445
+ 0.00368987 0.00364689 0.00356573 0.00351519 0.00345361 0.00340116
+ 0.00338645 0.00332885 0.00329934 0.00326493 0.00323637 0.0032166
+ 0.00319403 0.00316714 0.00315192 0.00313279 0.00312941 0.00308489
+ 0.00306318 0.00305069 0.00303814 0.0030052  0.00299577 0.00295801
+ 0.00294957 0.00291622 0.00290903 0.0028914  0.00286436 0.00285133
+ 0.00282958 0.00281231 0.00277848 0.00276634 0.00275428 0.002715
+ 0.00267932 0.00265453 0.00260891 0.00256294 0.00236252 0.00193918
+ 0.0018405  0.0017857  0.00172103 0.00168771 0.00165286 0.00163301
+ 0.0015716  0.00156057 0.00155662 0.00153134 0.00152046 0.00149925
+ 0.00146957 0.00145232 0.00144672 0.00144115 0.00143384 0.00141559
+ 0.00141092 0.00138879 0.00138609 0.0013658  0.00136383 0.00135377
+ 0.00134913 0.00134285 0.00132538 0.00130937 0.00130258 0.00130056
+ 0.00128594 0.00128317 0.0012677  0.00126153 0.00125124 0.00124681
+ 0.00123656 0.00123026 0.00122423 0.00121941]
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in __call__
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 524, in _fit_and_score
+    X_train, y_train = _safe_split(estimator, X, y, train)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/metaestimators.py", line 198, in _safe_split
+    raise ValueError("X should be a square kernel matrix")
+ValueError: X should be a square kernel matrix
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ProjetMLSVM.py", line 56, in <module>
+    grid_SVC.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 736, in fit
+    self._run_search(evaluate_candidates)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 1188, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 708, in evaluate_candidates
+    out = parallel(delayed(_fit_and_score)(clone(base_estimator),
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 1042, in __call__
+    self.retrieve()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 921, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+ValueError: X should be a square kernel matrix
+End computation

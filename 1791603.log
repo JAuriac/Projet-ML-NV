@@ -1,0 +1,65 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.0083302  0.00717338 0.00599618 0.00561229
+ 0.00492868 0.00460756 0.00431955 0.00410088 0.00384349 0.00372449
+ 0.00368992 0.00364691 0.00356579 0.00351517 0.00345324 0.00340133
+ 0.0033865  0.00332844 0.00329947 0.00326475 0.00323733 0.00321729
+ 0.00319389 0.00316697 0.00315136 0.00313113 0.00312866 0.00308412
+ 0.00306328 0.00305036 0.00303699 0.00300547 0.00299618 0.00295922
+ 0.00295129 0.00291531 0.00290807 0.00289199 0.00286659 0.00285133
+ 0.00283015 0.00281033 0.00278073 0.00276558 0.00275528 0.00271495
+ 0.0026796  0.00265576 0.00261111 0.00255919 0.00237239 0.00194462
+ 0.001836   0.00177591 0.00171169 0.00166118 0.00164597 0.00163435
+ 0.00161868 0.00158414 0.00155448 0.00154009 0.00152292 0.00149758
+ 0.0014811  0.00146849 0.00144309 0.00143809 0.0014345  0.00142118
+ 0.00140552 0.00139301 0.00138639 0.00137919 0.00136569 0.00135561
+ 0.0013479  0.00133874 0.00132597 0.00131968 0.00130793 0.00129351
+ 0.00128622 0.0012809  0.00127499 0.00126872 0.001259   0.00124955
+ 0.00124399 0.0012353  0.00122773 0.00121831]
+{'gamma': 'auto', 'kernel': 'rbf'}
+0.8441771658081068
+0.9390038426085023
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in __call__
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 520, in _fit_and_score
+    estimator = estimator.set_params(**cloned_parameters)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/base.py", line 249, in set_params
+    raise ValueError('Invalid parameter %s for estimator %s. '
+ValueError: Invalid parameter gamma for estimator LinearSVC(). Check the list of available parameters with `estimator.get_params().keys()`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ProjetMLSVM.py", line 131, in <module>
+    grid_SVC.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 736, in fit
+    self._run_search(evaluate_candidates)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 1188, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 708, in evaluate_candidates
+    out = parallel(delayed(_fit_and_score)(clone(base_estimator),
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 1042, in __call__
+    self.retrieve()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 921, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+ValueError: Invalid parameter gamma for estimator LinearSVC(). Check the list of available parameters with `estimator.get_params().keys()`.
+End computation

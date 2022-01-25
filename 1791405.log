@@ -1,0 +1,6 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+{'C': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+0.8500508759834593
+0.9442374358348389
+## OAR [2022-01-24 08:23:53] Job 1791405 KILLED

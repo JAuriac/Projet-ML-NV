@@ -1,0 +1,27 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.8148461680667886
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.7999170945998056
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.7996912654146663
+{'algorithm': 'SAMME.R', 'learning_rate': 0.5, 'n_estimators': 80}
+0.8253700129521192
+0.8031741038568281
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.82137876378431
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.8253886964831934
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.8202492864709331
+{'algorithm': 'SAMME.R', 'learning_rate': 1.0, 'n_estimators': 80}
+0.8248427273057211
+0.7962648816105995
+End computation

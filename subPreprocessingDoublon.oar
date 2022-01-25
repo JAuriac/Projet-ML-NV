@@ -2,7 +2,7 @@
 
 ### nombre de cores et duree max du job
 #OAR -l core=28,walltime=20:20:30
-#OAR -p host='n-in77'
+#OAR -p host='n-in79'
 ## -l core=80,walltime=00:00:30 -S ./run.oar
 
 #OAR -n ml_gridcv
@@ -13,6 +13,6 @@
 ### usage1 : oarsub -S ./tp1.oar
 ### usage2 : oarsub -l core=120 -S ./tp1.oar
 
-python ProjetMLSVM.py
+python ProjetMLPreprocessingDoublon.py
 
 echo "End computation"

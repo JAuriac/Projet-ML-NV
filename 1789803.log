@@ -1,0 +1,7 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+Traceback (most recent call last):
+  File "ProjetMLPreprocessingDoublon.py", line 174, in <module>
+    grid_svc = GridSearchCV(SVC(), param_grid_svc, cv=10)
+NameError: name 'param_grid_svc' is not defined
+End computation

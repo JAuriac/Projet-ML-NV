@@ -1,0 +1,13 @@
+/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/preprocessing/_data.py:2995: RuntimeWarning: divide by zero encountered in log
+  loglike = -n_samples / 2 * np.log(x_trans.var())
+Traceback (most recent call last):
+  File "ProjetMLPreprocessing.py", line 90, in <module>
+    X_powerYJBis = pca.fit_transform(X_powerYJ)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/decomposition/_pca.py", line 376, in fit_transform
+    U, S, V = self._fit(X)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/decomposition/_pca.py", line 423, in _fit
+    return self._fit_full(X, n_components)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/decomposition/_pca.py", line 439, in _fit_full
+    raise ValueError("n_components=%r must be between 0 and "
+ValueError: n_components=500 must be between 0 and min(n_samples, n_features)=100 with svd_solver='full'
+End computation

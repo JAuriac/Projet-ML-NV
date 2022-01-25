@@ -1,0 +1,62 @@
+[0.08963359 0.04301965 0.03106848 0.01958062 0.01481655 0.01446388
+ 0.01275278 0.01104676 0.0083302  0.00717338 0.00599618 0.00561228
+ 0.00492868 0.00460757 0.00431952 0.00410098 0.00384351 0.00372452
+ 0.0036902  0.00364685 0.00356583 0.00351468 0.0034536  0.00340094
+ 0.00338662 0.00332872 0.00330001 0.0032645  0.00323728 0.00321529
+ 0.0031936  0.00316747 0.00315231 0.00313184 0.00312745 0.00308461
+ 0.00306385 0.00305047 0.00303745 0.00300489 0.00299532 0.00295894
+ 0.00295112 0.00291639 0.00290788 0.00288993 0.00286569 0.00285253
+ 0.0028289  0.00281095 0.00278254 0.00276337 0.00275772 0.00271346
+ 0.0026788  0.00265395 0.00260621 0.00256303 0.00236907 0.00193031
+ 0.00183124 0.00178621 0.00169975 0.00169283 0.001667   0.00162948
+ 0.00160932 0.00156046 0.00154672 0.00154256 0.00153108 0.0015173
+ 0.00149332 0.00146943 0.00145683 0.00143904 0.00142686 0.00141433
+ 0.00140559 0.00139128 0.00138383 0.0013658  0.00136163 0.00135533
+ 0.00134613 0.00133824 0.00132604 0.00130792 0.00130005 0.00129488
+ 0.00129042 0.00127783 0.0012689  0.00126188 0.00125643 0.00124529
+ 0.00123923 0.00122513 0.0012169  0.00121221]
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in __call__
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 252, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 520, in _fit_and_score
+    estimator = estimator.set_params(**cloned_parameters)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/base.py", line 249, in set_params
+    raise ValueError('Invalid parameter %s for estimator %s. '
+ValueError: Invalid parameter kernel for estimator LinearSVC(). Check the list of available parameters with `estimator.get_params().keys()`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ProjetMLSVM.py", line 129, in <module>
+    grid_SVC.fit(X_final, y);
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 736, in fit
+    self._run_search(evaluate_candidates)
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 1188, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 708, in evaluate_candidates
+    out = parallel(delayed(_fit_and_score)(clone(base_estimator),
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 1042, in __call__
+    self.retrieve()
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/parallel.py", line 921, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/softs/python/3.8.5/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/softs/python/3.8.5/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+ValueError: Invalid parameter kernel for estimator LinearSVC(). Check the list of available parameters with `estimator.get_params().keys()`.
+End computation
